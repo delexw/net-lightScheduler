@@ -7,18 +7,6 @@ namespace LScheduler
 {
     public class JobDictionary
     {
-        public enum JobType
-        {
-            FeeDeduction,
-            IndirectFeeDeduction,
-        }
-
-        public enum PayWorkJobType
-        {
-            Daily = 1,
-            Interval = 0
-        }
-
         public enum JobTimeType
         {
             /// <summary>
@@ -46,5 +34,8 @@ namespace LScheduler
         public const string DebugSectionName = "JobDebugger";
         public const string UnitSectionName = "JobUnit";
         public const string ContextSectionrName = "JobContext";
+
+        public const string JOB_INTERNAL_TIMER_PATTERN = "JOB_INTERNAL_TIMER_PATTERN";
+        public const string JOB_INTERNAL_TIMER_TIME = "JOB_INTERNAL_TIMER_TIME";
     }
 }

@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\JobException.cs" />
+    <Compile Include="Common\JobMessage.cs" />
+    <Compile Include="Common\TimePending.cs" />
     <Compile Include="Debug\Config\JobDebugConfigure.cs" />
     <Compile Include="Debug\JobDebug.cs" />
     <Compile Include="Formatter\JobTimeFormatter.cs" />
@@ -62,7 +64,10 @@
     <Compile Include="JobManager.cs" />
     <Compile Include="JobUnitContainer.cs" />
     <Compile Include="Job\Config\JobContainerConfigure.cs" />
+    <Compile Include="Job\IntervalTimerJobContainer.cs" />
     <Compile Include="Job\JobPolling.cs" />
+    <Compile Include="Job\PointIntervalTimerJobContainer.cs" />
+    <Compile Include="Job\PointTimerJobContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Units\Config\JobUnitConfigure.cs" />
     <Compile Include="Units\JobUnit.cs" />
