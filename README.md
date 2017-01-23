@@ -1,4 +1,5 @@
 # net-lightScheduler
+
 It is a light schedule library which is used to manage jobs in .Net solution. I created it as the idear is from my last project which is very close to payment management and I uploaded into git for learning and reminding me of what I did before. These payments that users applyed for ordering something on mobile app are not real-time deduction payment. The library is used to manage all of the jobs that are running constantly background to check the payment status in order to do the real deduction by bank's apis. It is light and common-used and its stability is proven by the already go-live system. 
 ## What is net-lightScheduler
 It is a .Net class library on the basis of publisher/subscriber and dependence injection design pattern and following SOLID priciple. 
@@ -10,8 +11,10 @@ Currently the library provides 3 native jobs to use:
 - Interval Job: the job is running under a specific timespan
 - Time Point Job: the job is running under a speific time point eg. 17:00 or 8:00
 - Time Job: the job is running under a specific month, date, hour, minute and second. eg. 12M means starting run job at the start of every December. 15D means starting run job at the start of 15th of every month.
+
 ### jobUnit
 It is a container of jobItems. In the configuration of jobUnit, global parameters which will be passed into all of jobItems are able to be specified.
+
 ### jobItem
 It is primitive of this library. jobItem does the real work according to the needs. The parameters that are needed by a particular jobItem can be set in configuration file and it also can accept global parameters set in jobUnit section.
 ## How to use it in your project
