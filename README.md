@@ -1,4 +1,4 @@
-# .Net Light Scheduler
+# .NET Light Scheduler
 
 It is a light schedule library which is used to manage jobs in .Net solution. I created it as the idear is from my last project which is very close to payment management and I uploaded into git for learning and reminding me of what I did before. These payments that users applyed for ordering something on mobile app are not real-time deduction payment. The library is used to manage all of the jobs that are running constantly background to check the payment status in order to do the real deduction by bank's apis. It is light and common-used and its stability is proven by the already go-live system. 
 ## What is net-lightScheduler
